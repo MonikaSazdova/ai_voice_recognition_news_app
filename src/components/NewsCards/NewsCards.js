@@ -8,6 +8,10 @@ const infoCards = [
 	{ color: '#1565c0', title: 'News by Categories', info: "Bussiness, Entertaiment, Music, Health, Science, Sports, Technology", text: "Give me the latest Technology news" },
 	{ color: '#4527a0', title: 'News by Terms', info: "Bitcoin, PlayStation 5, Humanism, Brexit, Italy, Covid-19...", text: "What's new about Bitcoin" },
 	{ color: '#283593', title: 'News by Sources', info: "CNN, BBC News, Wired, Time, IGN, Buzzfeed, ABC News...", text: "Give me the news from CNN"},
+	{ color: '#0067c7', title: 'Small talk', info: "Ask Alan something", text: "How are you?, How old are you?, Are you a chatbot?..."},
+	{ color: '#6300c7', title: 'More info about the app', info: "Learn more about this application", text: "What does this app do?, How does this app works..."},
+	{ color: '#15a4c0', title: 'Useful options', info: "Use the following instructions after searching the news", text: "'Open article number 5' (choose the article number) and 'Go back' "},
+	{ color: '#15c0bd', title: 'Who did this', info: "Learn more about Monika", text: "'Who programmed this app?' and 'Tell me more about Monika' "},
 ]
 
 const NewsCards = ({ articles, activeArticle }) => {
@@ -24,10 +28,10 @@ const NewsCards = ({ articles, activeArticle }) => {
 									{
 										infoCard.info 
 											? (<Typography variant="h6">
-													<strong>
+													{/* <strong>
 														{infoCard.title.split(' ')[2]}
-													</strong>
-													<br />
+													</strong> */}
+													{/* <br /> */}
 													{infoCard.info}
 											</Typography>) : null}
 								 <Typography variant="h6"><strong>Try saying:</strong><br/><i>{infoCard.text}</i></Typography>
